@@ -14,13 +14,13 @@
 {%- assign night_mode = return -%}
 
 <script>
-  (function() {
+  (function () {
     var sw = document.getElementById('theme-switch');
     var html = document.getElementsByTagName('html')[0];
     var nightModeOption = ('{{ night_mode }}' || 'auto').toLowerCase();
     var storage = nightModeOption === 'manual'
-        ? localStorage
-        : sessionStorage;
+      ? localStorage
+      : sessionStorage;
     var themeData = loadThemeData();
 
     function saveThemeData(data) {
@@ -47,8 +47,8 @@
       }, 50);
 
       var banner_img = document.querySelector("body > section > div.page-banner-img > div").style.backgroundImage;
-      if ( document.querySelector("head > meta:nth-child(11)").content == 'blog' ) {
-        if ( sw.checked ) {
+      if (document.querySelector("head > meta:nth-child(11)").content == 'blog') {
+        if (nightShift) {
           document.querySelector("body > section > div.page-banner-img > div").style.backgroundImage = 'url("/assets/images/banners/dark.jpg")';
         }
         else {
