@@ -45,6 +45,16 @@
       setTimeout(function() {
         sw.checked = nightShift ? true : false;
       }, 50);
+
+      var banner_img = document.querySelector("body > section > div.page-banner-img > div").style.backgroundImage;
+      if ( document.querySelector("head > meta:nth-child(11)").content == 'blog' ) {
+        if ( sw.checked ) {
+          document.querySelector("body > section > div.page-banner-img > div").style.backgroundImage = 'url("/assets/images/banners/dark.jpg")';
+        }
+        else {
+          document.querySelector("body > section > div.page-banner-img > div").style.backgroundImage = 'url("/assets/images/banners/light.jpg")';
+        }
+      }
     }
 
     function autoThemeToggle() {
