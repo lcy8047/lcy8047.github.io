@@ -7,7 +7,7 @@ categories: write-up
 banner:
   start_at: 8.5
   opacity: 0.618
-  image: "https://ctftime.org/media/cache/78/783b179e1b440387e6f2df0a1673b141.png"
+  image: "https://user-images.githubusercontent.com/35690965/197031183-db3769d4-8dad-4957-ad03-c495dd53e67b.png"
   background: "#000"
   height: "100vh"
   min_height: "38vh"
